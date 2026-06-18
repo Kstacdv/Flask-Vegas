@@ -1,7 +1,10 @@
 import random
 from flask import Flask, render_template_string
+import os
 
 app = Flask(__name__)
+
+CASINO_SECRET_KEY = os.environ.get("CASINO_PASS", "Brak_Dostepu_Default")
 
 STATUS_BARU = [
     "W normie",
@@ -62,7 +65,7 @@ def index():
 
             <div class="footer">
                 System operuje w kontenerze Docker<br>
-                <span class="version">Ver: 0.1</span>
+                <span class="version">Ver: 0.2</span>
             </div>
         </div>
     </body>
