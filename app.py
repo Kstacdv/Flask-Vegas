@@ -65,7 +65,7 @@ def index():
 
             <div class="footer">
                 System operuje w kontenerze Docker<br>
-                <span class="version">Ver: 1.0</span>
+                <span class="version">Ver: 1.1</span>
             </div>
         </div>
     </body>
